@@ -79,6 +79,10 @@ nav {
     
 }
 
+.nav-item.active {
+    color: #0099ff;
+}
+
 .search-bar {
     display: flex;
     margin-top: 50px;
