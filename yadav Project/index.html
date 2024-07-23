@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="image/comoany logo.png" alt="Company Logo">
+            </a>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li id="Technology" class="hover-link nav-item">Technology</li>
+                    <li id="Sports" class="hover-link nav-item">Sports</li>
+                    <li id="Finance" class="hover-link nav-item">Finance</li>
+                    <li id="Politics" class="hover-link nav-item">Politics</li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 style="text-align: center; font-size: 40px;">Latest News</h1>
+
+    <div class="search-bar">
+        <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+        <button id="search-button">Search</button>
+    </div>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title"></h3>
+                <h6 class="news-source" id="news-source"></h6>
+                <p class="news-desc" id="news-desc"></p>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <p>&copy; 2024 News Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

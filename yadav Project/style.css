@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #dbe7f0;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    /* Adjust height as per your design */
+    /* You can also specify width if needed, or use max-width to ensure responsiveness */
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #1a1212;
+    margin: 5px 0;
+    transition: transform 0.4s ease;
+}
+
+
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.hover-link  {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    color: #0099ff;
+    
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5;
+    /* Adjust the gap between cards */
+    justify-content: space-between;
+    padding: 20px;
+    /* Optional padding to add space around the cards */
+}
+
+.card {
+    width: 350px;
+    min-height: 50px;
+    height: 500px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #bbd0e2;
+    transform: translateY(-2px);
+}
+
+
+.card-header img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.card-content h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-content .news-source {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card-content .news-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding-top: 35px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    top: auto;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        color: white;
+        width: 100%;
+        left: 0;
+        top: 64px;
+        z-index: 1;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        padding: 10px 20px;
+        background-color: #ffffff;
+    }
+
+    .hover-link{
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .hover-link:hover {
+        color: #0099ff;
+        
+    }
+
+    .hamburger {
+        display: block;
+        padding: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        /* One card per row on mobile */
+    }
+}
+
+.cardambani {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-headerambani img {
+    height: 600px;
+    width: 650px;
+
+}
