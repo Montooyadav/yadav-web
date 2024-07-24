@@ -1,7 +1,11 @@
-const API_KEY = "2bde4a01fcdb4cebb35230e5963ed0ee";
+const API_KEY = "ce2754c04cbb459aa7328102c1b7bf19";
 const url = "https://newsapi.org/v2/everything?q="
 
-window.addEventListener("load", () => fetchNews("Technology"));
+window.addEventListener("load", () => fetchNews("india"));
+
+function reload() {
+    window.location.reload();
+}
 
 async function fetchNews(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
@@ -42,6 +46,11 @@ function fillDataInCard(cardClone, article) {
         window.open(article.url, "_blank");
     })
 }
+
+function onNavItemClick(id) {
+    fetchNews(id);
+}
+
 
 let curSelectedNav = null;
 function onNavItemClick(id) {

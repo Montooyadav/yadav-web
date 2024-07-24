@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +13,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -117,17 +140,18 @@ nav {
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5;
+    row-gap: 20px;
     /* Adjust the gap between cards */
     justify-content: space-between;
     padding: 20px;
+    align-items: start;
     /* Optional padding to add space around the cards */
 }
 
 .card {
     width: 350px;
     min-height: 50px;
-    height: 500px;
+    height: 400px;
     box-shadow: 0 0 4px #d4ecff;
     border-radius: 4px;
     cursor: pointer;
@@ -139,14 +163,14 @@ nav {
 
 .card:hover {
     box-shadow: 1px 1px 8px #d4ecff;
-    background-color: #bbd0e2;
+    background-color: #d7dde2;
     transform: translateY(-2px);
 }
 
 
 .card-header img {
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -157,6 +181,7 @@ nav {
 
 .card-content {
     padding: 20px;
+
 }
 
 .card-content h3 {
@@ -165,9 +190,9 @@ nav {
 }
 
 .card-content .news-source {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     color: #666;
-    margin-bottom: 5px;
+    margin-block: 12px;
 }
 
 .card-content .news-desc {
