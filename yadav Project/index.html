@@ -13,7 +13,7 @@
 
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#" onclick="reload()" class="logo">
                 <img src="image/comoany logo.png" alt="Company Logo">
             </a>
 
@@ -24,10 +24,8 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li id="Home" onclick="onNavItemClick('Home')" class="hover-link nav-item">Home</li>
-                    <li id="Technology" onclick="onNavItemClick('Technology')" class="hover-link nav-item">Technology
-                    </li>
-                    <li id="Sports" onclick="onNavItemClick('Sports')" class="hover-link nav-item">Sports</li>
+                    <li id="Technology" onclick="onNavItemClick('Technology')" class="hover-link nav-item">Technology</li>
+                    <li id="Sports" onclick="onNavItemClick('Sports')"class="hover-link nav-item">Sports</li>
                     <li id="Finance" onclick="onNavItemClick('Finance')" class="hover-link nav-item">Finance</li>
                     <li id="Politics" onclick="onNavItemClick('Politics')" class="hover-link nav-item">Politics</li>
 
@@ -38,7 +36,7 @@
     <h1 style="text-align: center; font-size: 40px;">Latest News</h1>
 
     <div class="search-bar">
-        <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+        <input id="search-text" type="text" class="news-input" placeholder="Search news,topics and more" >
         <button id="search-button" class="search-button">Search</button>
     </div>
 
@@ -62,18 +60,7 @@
     </template>
 
     <footer>
-        <div class="container">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="about.html" class="footer-link">About Us!</a></li>
-                    <li><a href="contact.html" class="footer-link">Contact Us!</a></li>
-                    <li><a href="privacy.html" class="footer-link">Privacy Policy!</a></li>
-                </ul>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2024 Techii News. All rights reserved.</p>
-            </div>
-        </div>
+        <p>&copy; 2024 News Blog. All rights reserved.</p>
     </footer>
 
     <script>

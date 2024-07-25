@@ -91,24 +91,26 @@ nav {
     cursor: pointer;
 }
 
-.hover-link {
+.hover-link  {
     font-weight: bold;
+    font-size: large;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .hover-link:hover {
-    color: #ff5101;
-
+    color: #fc6334;
+    
 }
 
 .nav-item.active {
-    color: #ff5101;
+    color: #fc6334;
 }
 
 .search-bar {
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: flex-end;
 }
@@ -116,16 +118,15 @@ nav {
 .search-bar input[type="text"] {
     padding: 10px;
     width: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #fc6334;
     border-radius: 4px;
     font-size: 14px;
     margin-right: 10px;
-    border-color: #ff5101;
 }
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #ff5101;
+    background-color: #fc6334;
     color: white;
     border: none;
     border-radius: 4px;
@@ -159,7 +160,7 @@ nav {
     background-color: #fff;
     overflow: hidden;
     transition: all 0.3s ease;
-
+    
 }
 
 .card:hover {
@@ -202,41 +203,23 @@ nav {
     color: #000000;
 }
 
-/* Example of CSS for footer alignment and links */
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
 footer {
-    background-color: #dbe7f0;
-    padding: 20px 0;
     text-align: center;
+    padding-top: 35px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    top: auto;
+    width: 100%;
+    height: 50px;
 }
 
-.footer-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    display: inline;
-    margin-right: 20px;
-
-}
-
-.footer-links ul li a:hover {
-    color: #ff5101;
-}
-
-.footer-info {
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-.footer-link {
-    color: #000000;
-    font-size: 30px;
+footer p {
+    margin: 0;
 }
 
 /* Media query for mobile */
@@ -269,15 +252,15 @@ footer {
         background-color: #ffffff;
     }
 
-    .hover-link {
+    .hover-link{
         font-weight: bold;
         color: rgb(0, 0, 0);
         text-decoration: none;
     }
 
     .hover-link:hover {
-        color: #ff5101;
-
+        color: #0099ff;
+        
     }
 
     .hamburger {
@@ -289,6 +272,8 @@ footer {
         display: flex;
         flex-direction: row;
         margin-top: 50px;
+        margin-bottom: 5px;
+        margin-right: 15px;
     }
 
     .search-bar input[type="text"] {

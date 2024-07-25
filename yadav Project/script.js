@@ -71,3 +71,14 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 })
+
+// Add event listener for Enter key press on search input field
+searchText.addEventListener("keypress", (event) => {
+    if (event.key === 'Enter') {
+        const query = searchText.value;
+        if (!query) return;
+        fetchNews(query);
+        curSelectedNav?.classList.remove("active");
+        curSelectedNav = null;
+    }
+});
