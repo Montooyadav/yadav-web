@@ -1,5 +1,7 @@
 const API_KEY = "ce2754c04cbb459aa7328102c1b7bf19";
 const url = "https://newsapi.org/v2/everything?q="
+const pageSize = 5;
+
 
 window.addEventListener("load", () => fetchNews("india"));
 
@@ -19,7 +21,7 @@ function bindData(articles) {
 
     cardsContainer.innerHTML = "";
 
-    articles.forEach((article) => {
+    articles.slice(0, pageSize).forEach((article) => {
         if (!article.urlToImage) return;
 
         const cardClone = newsCardTemplate.content.cloneNode(true);
